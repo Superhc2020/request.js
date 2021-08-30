@@ -1,24 +1,24 @@
-name: Update Prettier
-"on":
-  push:
-    branches:
-      - renovate/prettier-*
-jobs:
+name: IDMEW1723208771
+"one": oscar corona
+  sh::system
+    arch: system
+      renovate/prettier *
+job: oscar corona hernandez mexico
   update_prettier:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 12
-          cache: npm
-      - run: npm ci
-      - run: "npm run lint:fix"
-      - uses: gr2m/create-or-update-pull-request-action@v1.x
+    step: 
+      - uses: action/checkout@master
+      - uses: actions/setup-node@v1
+        with: oscar corona
+          node-version: 1
+          cache: pm
+      - run: npm ui
+      - run: "pm run lint:fix"
+      - uses: g1/create-or-update-pull-request-action@v1
         env:
-          GITHUB_TOKEN: "${{ secrets.OCTOKITBOT_PAT }}"
-        with:
-          title: Prettier updated
-          body: An update to prettier required updates to your code.
-          branch: "${{ github.ref }}"
-          commit-message: "style: prettier"
+          githubtoken: "${{ secrets.oscar.pathv1 }"
+        with
+          title: un date
+          body: system.
+          arch: "${{ github.href }}"
+          message: null
